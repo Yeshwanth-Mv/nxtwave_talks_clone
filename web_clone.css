@@ -1,0 +1,656 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+  }
+  
+  .first-sec {
+    background: linear-gradient(to right, 
+    rgba(12, 26, 47,1.0) 0%,                 
+    rgba(12, 26, 47
+    , 0.871) 29%,         
+    rgba(16, 33, 60, 0.753) 37%,
+    rgba(28, 41, 62, 0) 75%            
+  );
+    width: 100%;
+    height: 100vh; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+    top:20%;
+  }
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top:0;
+    right:0;
+    left:0;
+    z-index: -1;
+  }
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #mobileVideo {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    #desktopVideo {
+      display: none;
+    }
+    #mobileVideo {
+      display: block;
+    }
+  }
+  .container {
+    position: relative;
+    width: 800px;
+    height:200px;
+    overflow: hidden;
+    margin-top:60px; 
+}
+.text-container {
+  position: absolute;
+  width:100%;
+  height: 200px; 
+  overflow: hidden;
+}
+.span-g{
+  color: #A3E635;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: scrollText 21s infinite ease-in-out;
+}
+.text {
+  height:220px; 
+  text-align: left;
+  display: flex;
+  font-size:43px;
+  font-weight: bold;
+  font-family: 'satoshi';
+  color: #fff;
+  margin-bottom:30px;
+}
+@keyframes scrollText {
+  0%, 8.33% { transform: translateY(0); }             
+  16.67% { transform: translateY(-250px); }          
+  25% { transform: translateY(-250px); }             
+  33.33% { transform: translateY(-500px); }          
+  41.67% { transform: translateY(-500px); }          
+  50% { transform: translateY(-750px); }             
+  58.33% { transform: translateY(-750px); }          
+  66.67% { transform: translateY(-1000px); }         
+  75% { transform: translateY(-1000px); }            
+  83.33% { transform: translateY(-1250px); }         
+  91.67% { transform: translateY(-1250px); }        
+  100% { transform: translateY(0); }        
+}
+.at-img{
+  width:150px;
+  height:80px;
+  margin-left:10px;
+}
+.at-img1{
+  width:120px;
+  height:80px;
+  margin-left:10px;
+}
+  .one{
+    width:400px;
+    border: none;
+    margin-bottom:16px;
+    padding:10px;
+    border-radius:9px;
+    font-family: 'satoshi';
+    font-size:15px;
+    color:#F1F5F9;
+  }
+  .one:active{
+    border:none;
+  }
+  .bt-1{
+    background-color:#2563EB;
+  }
+  .bt-2{
+    background-color: transparent;
+    border: 1px solid #F1F5F9;
+  }
+  .green-line{
+    width:70px;
+    position: absolute;
+    z-index:0;
+    left:14.5em;
+    top:32.5em;
+  }
+  .green-line2{
+    width:50px;
+    position:relative;
+    z-index:0;
+    left:4em;
+    top:13.6em;
+  }
+  .fs-info{
+    position:absolute;
+    top:5em;
+    left:15vw;
+  }
+  .second-sec{
+    width:100%;
+    height:83vh;
+    background-color: #0c1729;
+  }
+  .main-text{
+    padding-top:10vh;
+    margin-bottom:10vh;
+  }
+  .h11{
+    font-size:3.2vw;
+    font-family:'Satoshi',sans-serif;
+    font-weight:bold;
+  }
+  @media (max-width:900px){
+    .h11{
+        font-size:30px;
+    }
+  }
+  .scrolling-images{
+    animation:scroll-left 24s linear infinite;  
+    animation-delay:0s;
+}
+@keyframes scroll-left{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-25%);
+    }
+    38%{
+        transform:translateX(-38%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.sc-img1,.sc-img2{
+    width:300em;
+    object-fit: contain;
+}
+@media (max-width:900px){
+    .sc-img1,.sc-img2{
+        width:180em;
+    }
+    .second-sec{
+        height:68vh;
+    }
+}
+.third-sec{
+    width:100%;
+    height:180vh;
+    background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4b212d25fe3_A%20Rare%20Collection%20of%20Insider%20%20Knowledge%2C%20All%20Yours!%20(1).png");
+      background-size:cover;
+    overflow:hidden;
+}
+.ts-1{
+    text-align: center;
+    width:100%;
+    margin:auto;
+}
+.ts-main{
+    font-size:3.2vw;
+    margin-top:10vw;
+    font-weight:bold;
+    line-height:4vw;
+    color:#F1F5F9;
+    font-family:'Satoshi',sans-serif;
+    max-height:140;
+    text-wrap:nowrap;
+}
+.ts-sub{
+    text-align:center;
+    font-family: sans-serif;
+    font-size:1.3vw;
+    color:#c9cdd2c9;
+    margin-top:20px;
+    margin-bottom:30px;
+    max-height:52;
+    text-wrap:nowrap;
+}
+.bts{
+    margin-top:20px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: pointer;
+    max-width: 100%;
+    padding: 10px 0; 
+    margin-left:-2%;
+}
+.bts::-webkit-scrollbar {
+    height: 5px;
+  }
+  .bts::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+  .bts::-webkit-scrollbar-track {
+    background: transparent;
+  }
+.b1{
+    border-radius:40px;
+    margin-right:20px;
+    padding-left:15px;
+    padding-right:15px;
+    font-family: sans-serif;
+    font-size:16px;
+    flex-shrink:0;
+}
+.b11{
+    border:none;
+    padding-right:15px;
+    padding-left:15px;
+    font-family: sans-serif;
+    font-size:14px;
+}
+@media (max-width: 1280px){
+    .ts-main{
+        width:100%;
+        font-size:45px;
+    }
+    .ts-sub{
+        font-size:18px;
+    }
+  }
+@media (max-width:950px){
+    .ts-main{
+        font-size:35px;
+        line-height:40px;
+    }
+    .ts-sub{
+        font-size:14px;
+    }
+}
+@media (max-width:590px){
+    .ts-main{
+        font-size:28px;
+        line-height:30px;
+    }
+    .ts-sub{
+        font-size:11px;
+    }
+    .b1,.b11{
+        font-size:12px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+.person-img{
+    width:300px;
+    height:195px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+.c1-info{
+    width:300px;
+    height:277px;
+    padding: 16px 16px 28px;
+    background-color: #32435a;
+    color:white;
+    font-family:'satoshi';
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    text-align: left;
+}
+.c1-time p svg{
+    width:30px;
+}
+.c1-main{
+    font-size:25px;
+    font-weight:bold;
+}
+.c1-name{
+    font-size:15px;
+    font-family: sans-serif;
+}
+.c1-n{
+    color:#c1cdde;
+    font-weight:bold;
+    font-size:17px;
+}
+.c1-link{
+    color:#5AA5FA;
+}
+.c1-link:hover{
+    text-decoration: none;
+    color:#5AA5FA;
+}
+.cards{
+    text-align: center;
+    margin:auto;
+    width:62%;
+    margin-bottom:0px;
+}
+.b2{
+    position: relative;
+    top:250px;
+    padding:10px;
+    padding-left:6em;
+    padding-right:6em;
+    font-weight:600;
+}
+.p2{
+    position: relative;
+    top:260px;
+}
+.tsb{
+  margin-top:-140px;
+}
+.fourth-sec{
+  width:100%;
+  height:100vh;
+  background-color:#0c1729;
+}
+.fss-main{
+  color:#F1F5F9;
+  font-family:'satoshi';
+  font-size:45px;
+  font-weight: bold;
+  line-height:65px;
+  margin-bottom:30px;
+}
+.fss{
+  padding-top:5vw;
+}
+.fss-b{
+  color:#F59E0B;
+  background-color:#fba40e17;
+  border:1px solid #f59f0ba2;
+  padding:15px;
+  border-radius:30px;
+  font-size:20px;
+  font-weight:600;
+  overflow:hidden;
+}
+.fifth-sec{
+  width:100%;
+  height:110vh;
+  background-image:url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4e843d25fd4_NxtWave's%20Empowering%20Podcast%20Series%20%20to%20Shape%20your%20Dream%20Career.%20(1).png");
+  background-size:cover;
+  color:#F1F5F9;
+  overflow: hidden;
+}
+.fi-s{
+  padding-left:9vw;
+  padding-top:5.5vw;
+}
+.fi-main{
+  font-family:'satoshi';
+  font-weight:bold;
+  font-size:49px;
+  line-height:70px;
+  width:900px;
+}
+@media (max-width:970px){
+  .fi-main{
+    font-size:38px;
+  }
+}
+.fi-2{
+  left:180px;
+  margin-top:60px;
+}
+.fi-info{
+  font-size:23.5px;
+  font-family:sans-serif;
+}
+.b3{
+  margin-top:40px;
+  padding:9px;
+  padding-left:9em;
+  padding-right:9em;
+  border-radius:8px;
+  font-family:sans-serif;
+  font-size:16px;
+  background-color: #2563EB;
+}
+.feedback-sec{
+  margin-top:70px;
+}
+.r1{
+  background-color: #32435a;
+  border-radius:7px;
+  color:#F1F5F9;
+  width:600px;
+  font-family: sans-serif;
+}
+.profile-pic{
+  width:64px;
+  height:64px;
+}
+@media (max-width:650px){
+  .r1{
+    width:400px;
+  }
+  .infoo p{
+    font-size:8px;
+  }
+  .infoo h4{
+    font-size:16px;
+  }
+  .profile-pic{
+    width:58px;
+    height:58px;
+  }
+}
+.infoo{
+  margin-left:10px;
+  margin-top:6px;
+}
+.infoo h4{
+  margin-bottom:0px;
+  font-weight:600;
+  font-family: 'satoshi';
+}
+.first{
+  font-weight: normal;
+  font-size:20px;
+  font-family: sans-serif;
+}
+.infoo p{
+  margin-top:0px;
+  font-size:14px;
+}
+.r1-info{
+  padding:20px;
+}
+.l-logo{
+  margin-left:auto;
+  margin-bottom:20px;
+  margin-right:10px;
+}
+.l-link{
+  color:rgb(72, 137, 202);
+}
+.l-link:hover{
+  text-decoration:none;
+  color:rgb(72,137,202);
+};
+.f-info{
+  font-size:19px;
+}
+.carousel-control-prev{
+  margin-left:-90px;
+}
+.carousel-control-next{
+  margin-right:-90px;
+}
+.sixth-sec{
+  width:100%;
+  height:69vh;
+  background-color:#0c1729;
+  overflow: hidden;
+  color: #F1F5F9;
+}
+.names{
+  margin-top:50px;
+}
+.names h1{
+  font-size:50px;
+  margin-right:-50px;
+}
+.ss-sec{
+  padding-top:120px;
+}
+.ss-fields{
+  margin-right:60px;
+  margin-left:-70px;
+}
+.ss-fields h4{
+  font-size:19px;
+}
+@media (max-width:1050px){
+  .hello{
+    display:flex;
+    flex-direction: column;
+  }
+  .names{
+    order:1;
+  }
+  .ss-fields{
+    order:2;
+  }
+}
+.inp-box{
+  background-color:#32435a;
+  border: none;
+  width:400px;
+  padding:8px;
+  border-radius:8px;
+  color:rgb(175, 175, 175);
+  padding-left:20px;
+}
+.inp-2{
+  margin-top:30px;
+}
+.bt-o{
+  margin-top:46px;
+  border-radius:8px;
+  padding:8px;
+}
+.seventh-sec{
+  width:100%;
+  height:30px;
+  overflow: hidden;
+  background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4b212d25fe3_A%20Rare%20Collection%20of%20Insider%20%20Knowledge%2C%20All%20Yours!%20(1).png");
+  background-size:cover;
+  color: #F1F5F9;
+  padding-top:4vw;
+  padding-bottom:4vw;
+}
+.sev-c{
+  padding-left:60px;
+}
+.sev-c h2{
+  font-size:19px;
+  font-family:'satoshi';
+}
+.eight-sec{
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  background-color: #0c1729;
+  color:#F1F5F9;
+}
+.content-8{
+  padding-left:10vw;
+  padding-right:10vw;
+  padding-top:7.2vw;
+}
+.nw-logo{
+  filter: brightness(0) invert(1);
+  width:120px;
+}
+.reach-us{
+  font-size:18px;
+  color:#5A7184;
+  padding-top:60px;
+  padding-bottom:20px;
+}
+.es-1 p{
+  color:#5A7184;
+  font-size:16px;
+}
+.ess-1 a,.ess-2 a{
+  color: #5A7184;
+  margin-bottom:11px;
+}
+.ess-1 a:hover,.ess-2 a:hover{
+  color:white;
+  cursor:pointer;
+  text-decoration:none;
+}
+.es-2{
+  margin-left:23vw;
+  color: #5A7184;
+  font-family:'Inter';
+}
+.ess-1,.ess-2{
+  font-size:17px;
+}
+.es-2 h5{
+  margin-bottom:40px;
+}
+.ess-2{
+  margin-left:19px;
+}
+.pay-links{
+  margin-left:10vw;
+}
+.pay-img img{
+  margin-bottom:20px;
+  margin-right:20px;
+}
+.address{
+  margin-left:16px; 
+}
+.hr-line{
+  border: 1.5px solid #5A7184;
+  opacity:0.4;
+}
+.bottom-sec{
+  margin-left:10vw;
+  margin-right:13vw;
+  margin-top:50px;
+}
+.tc a{
+  color:#5A7184;
+  font-size:17px;
+  padding-right:10px;
+  opacity:0.6;
+}
+.tc a:hover{
+  color: #F1F5F9;
+  text-decoration:none;
+}
+.sm img{
+  width:30px;
+  margin-right:10px;
+}
